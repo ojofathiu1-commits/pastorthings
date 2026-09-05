@@ -1,0 +1,92 @@
+.section {
+  padding: 48px 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.form {
+  margin-top: 28px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 16px;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.submitBtn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background: var(--text);
+  color: #000;
+}
+
+.submitBtn:disabled {
+  background: #1e1e1e;
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.fine {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.fine a {
+  color: var(--text-dim);
+  text-decoration: underline;
+}
+
+.error {
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--danger);
+}
+
+.success {
+  margin-top: 28px;
+  font-size: 14px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}

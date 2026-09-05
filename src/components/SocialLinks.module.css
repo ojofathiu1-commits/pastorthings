@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.circle svg {
+  width: 19px;
+  height: 19px;
+}
+
+.pending {
+  cursor: default;
+}
+
+.small {
+  gap: 8px;
+}
+
+.small .circle {
+  width: 34px;
+  height: 34px;
+}
+
+.small .circle svg {
+  width: 15px;
+  height: 15px;
+}

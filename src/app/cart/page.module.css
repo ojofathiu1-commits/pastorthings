@@ -1,0 +1,143 @@
+.wrap {
+  padding: 22px 18px 40px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.empty {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.emptyText {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.browseLink {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 2px;
+}
+
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.thumb {
+  position: relative;
+  width: 68px;
+  height: 88px;
+  background: #141414;
+  border-radius: 3px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.itemPrice {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.itemControls {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qtyRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qtyBtn {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.remove {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.summary {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+}
+
+.checkoutBtn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background: var(--text);
+  color: #000;
+}
+
+.continueLink {
+  display: block;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}

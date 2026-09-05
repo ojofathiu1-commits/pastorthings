@@ -1,0 +1,21 @@
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.block {
+  background: #141414;
+  border-radius: 4px;
+  animation: pulse 1.6s ease-in-out infinite;
+}
+
+.line {
+  background: #161616;
+  border-radius: 2px;
+  animation: pulse 1.6s ease-in-out infinite;
+}

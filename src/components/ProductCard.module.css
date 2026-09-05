@@ -1,0 +1,87 @@
+.card {
+  display: block;
+  color: inherit;
+}
+
+.imageWrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 4px;
+  background: #141414;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.placeholderMark {
+  width: 34%;
+  opacity: 0.5;
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: var(--text);
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.tag.soldOut {
+  background: var(--text-muted);
+  color: #000;
+}
+
+.tag.comingSoon {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+
+.name {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.price {
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.cta {
+  margin-top: 10px;
+  width: 100%;
+  padding: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background: var(--text);
+  color: #000;
+}
+
+.cta:disabled {
+  background: #1e1e1e;
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.ctaOutline {
+  composes: cta;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}

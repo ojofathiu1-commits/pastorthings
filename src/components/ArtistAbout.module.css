@@ -1,0 +1,63 @@
+.section {
+  padding: 40px 18px;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 70px;
+}
+
+.portrait {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #141414;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.badge svg {
+  width: 14px;
+  height: 14px;
+  color: var(--text);
+}
+
+.brandNote {
+  margin-top: 16px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+@media (min-width: 720px) {
+  .section {
+    padding: 56px 40px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .name {
+    margin-top: 0;
+  }
+}

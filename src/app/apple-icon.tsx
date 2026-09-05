@@ -1,0 +1,29 @@
+import { ImageResponse } from "next/og";
+
+export const size = { width: 180, height: 180 };
+export const contentType = "image/png";
+
+const CROSS_PATH =
+  "M 53.57,61.14 L 62.91,61.14 C 67.69,58.35 70.15,63.28 71.14,64.14 C 70.15,65.00 67.69,69.93 65.79,69.50 L 62.91,67.14 L 53.57,67.14 L 53.57,78.07 C 55.89,86.15 51.36,90.33 50.57,92.00 C 49.78,90.33 45.25,86.15 45.64,82.94 L 47.57,78.07 L 47.57,67.14 L 38.23,67.14 C 33.45,69.93 30.99,65.00 30.00,64.14 C 30.99,63.28 33.45,58.35 35.35,58.78 L 38.23,61.14 L 47.57,61.14 L 47.57,56.36 C 45.25,52.67 49.78,50.76 50.57,50.00 C 51.36,50.76 55.89,52.67 55.50,54.13 L 53.57,56.36 L 53.57,61.14 Z";
+
+export default function AppleIcon() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#000",
+        }}
+      >
+        <svg width="90" height="92" viewBox="28 48 45 46">
+          <path d={CROSS_PATH} fill="#e8e8e8" stroke="#666" strokeWidth="0.6" />
+        </svg>
+      </div>
+    ),
+    { ...size },
+  );
+}

@@ -1,0 +1,89 @@
+.wrap {
+  margin-top: 22px;
+}
+
+.qtyRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.qtyBtn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.qtyBtn:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.qtyValue {
+  font-size: 14px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cta {
+  width: 100%;
+  padding: 13px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  background: var(--text);
+  color: #000;
+}
+
+.cta:disabled {
+  background: #1e1e1e;
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 16px; /* prevents iOS Safari from zooming in on focus */
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.success {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--danger);
+}
